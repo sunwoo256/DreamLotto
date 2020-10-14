@@ -1,0 +1,171 @@
+h1{
+  font-size: 40px;
+  margin-bottom: 1px;
+  text-align:center;
+  color: white;
+  background-color: black;
+  border-style: none;
+  padding: 1px
+}
+  h2{
+    text-align:center;
+    border: 5px solid red;
+    padding: 1px;
+    margin: auto;
+    display: block;
+    width: 150px;
+  }
+  h5{
+    text-align:right;
+    color: white;
+  }
+  h4{
+    text-align:center;
+  }
+  h3{
+    color: white;
+    margin-top: 0px;
+    margin-left: 30%;
+    font-size: 15px;
+  }
+body{
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  vertical-align: middle;
+}
+
+.nubox{
+  margin-left: inherit;
+  text-align: center;
+}
+
+.hiddennum{
+  padding: 1px;
+}
+.nubox > #arrcode,#arrcode1,#arrcode2,#arrcode3,#arrcode4,#arrcode5{
+  font-size: 1.5em;
+  text-align:center;
+  border-radius: 50%;
+  height: 2.5em;
+  width: 2.5em;
+}
+.searchNumber {
+  text-align:center;
+}
+#value{
+  font-size: 1.5em;
+  text-align:center;
+  border-radius: 50%;
+  height: 2.5em;
+  width: 2.5em;
+}
+#value1{
+  font-size: 1.5em;
+  text-align: right;
+  height: 2.5em;
+  width: 2.5em;
+  background-color: black;
+  border-style: none;
+}
+#maintable{
+  background-color:#EEEEEE;
+  opacity: 0.8;
+  padding-top :2em;
+  border-radius: 0.5%;
+  width: 60%;
+  margin-left: 20%;
+}
+/* ?? */
+#one1, #one2, #one3, #one4, #one5, #one6, #one7, #one8, #one9, #one10{
+  background-color: yellow;
+  padding: 20%;
+  color : black;
+  text-align:center;
+  border-radius: 50%;
+  margin-bottom: 0.5%;
+  margin-left: 0.5%;
+  display: inline-block;
+  font-size: 1.5em;
+}
+/* ?? */
+#one11, #one12, #one13, #one14, #one15, #one16, #one17, #one18, #one19, #one20{
+  background-color: #0099ff;
+  padding: 20%;
+  color : black;
+  text-align:center;
+  border-radius: 50%;
+  margin-bottom: 0.5%;
+  margin-left: 0.5%;
+  display: inline-block;
+  font-size: 1.5em;
+}
+/* ?? */
+#one21, #one22, #one23, #one24, #one25, #one26, #one27, #one28, #one29, #one30{
+  background-color: #ff0000;
+  padding: 20%;
+  color : black;
+  text-align:center;
+  border-radius: 50%;
+  margin-bottom: 0.5%;
+  margin-left: 0.5%;
+  display: inline-block;
+  font-size: 1.5em;
+}
+/* ?? */
+#one31, #one32, #one33, #one34, #one35, #one36, #one37, #one38, #one39, #one40{
+  background-color: #AAAAAA;
+  padding: 20%;
+  color : black;
+  text-align:center;
+  border-radius: 50%;
+  margin-bottom: 0.5%;
+  margin-left: 0.5%;
+  display: inline-block;
+  font-size: 1.5em;
+}
+/* ?? */
+#one41, #one42, #one43, #one44, #one45{
+  background-color: #00cc00;
+  padding: 20%;
+  color : black;
+  text-align:center;
+  border-radius: 50%;
+  margin-bottom: 0.5%;
+  margin-left: 0.5%;
+  display: inline-block;
+  font-size: 1.5em;
+}
+#search{
+  width: 40%
+  padding : 0.5px;
+  padding : 0.4em;
+  font-size: 1em;
+}
+#searching, #del, #era, #ran{
+  padding : 0.4em;
+  margin-bottom: 1em;
+  font-size: 1em;
+  box-shadow: inset 5em 1em #0066ff;
+  border-radius:10%;
+  margin-left: inherit;
+  text-align: center;
+  color: white;
+};
+table.type01 {
+    border-collapse: collapse;
+    text-align: left;
+    line-height: 1.5;
+    margin : 20px 10px;
+    text-align: center;
+}
+table.type01 th {
+    width: 2em;
+    padding: 10px;
+    text-align: center;
+}
+table.type01 td {
+    padding: 10px;
+    vertical-align: top;
+    text-align: center;
+}

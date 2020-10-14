@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Lotto_home</title>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+  </head>
+  <script>
+      function add(a) {
+        var display = document.getElementById("display");
+        display.value = a;
+        if (arrys.length < 6) {
+        return arr.push(a);
+        } else {ko()};
+      };
+
+      function randomNumber(){
+        Array.from(new Set(arr))
+        for (i = arrys.length; arrys.length < 6; i++) {
+        var result = Math.floor(Math.random() * 45)+1;
+        return arr.push(result), aa(), changecode(), randomNumber();
+        };
+      };
+      var arr = [];
+      var arrys = [];
+      function aa(){
+      for (var i=0; i<arr.length; i++){
+          console.log(arr.sort(function(a,b){return a-b})[i]);
+        };
+          var set = Array.from(new Set(arr));
+          var arrcode = document.getElementById("arrcode");
+          if (set[0] == undefined){arrcode.value = " "
+        } else {arrcode.value = set[0]};
+          var arrcode = document.getElementById("arrcode1");
+          if (set[1] == undefined){arrcode1.value = " "
+        } else {arrcode1.value = set[1]};
+          var arrcode = document.getElementById("arrcode2");
+          if (set[2] == undefined){arrcode2.value = " "
+        } else {arrcode2.value = set[2]};
+          var arrcode = document.getElementById("arrcode3");
+          if (set[3] == undefined){arrcode3.value = " "
+        } else {arrcode3.value = set[3]};
+          var arrcode = document.getElementById("arrcode4");
+          if (set[4] == undefined){arrcode4.value = " "
+        } else {arrcode4.value = set[4]}
+          var arrcode = document.getElementById("arrcode5");
+          if (set[5] == undefined){arrcode5.value = " "
+        } else {arrcode5.value = set[5]}
+          console.log(set)
+          window.arrys = set;
+        };
+        function ko(){
+          alert("6자리 입력이 끝났습니다.")
+        };
+        function del(){
+          arr = [];
+          arrys = [];
+          var arrcode = document.getElementById("arrcode");
+          arrcode.value = " "
+          var arrcode = document.getElementById("arrcode1");
+          arrcode1.value = " "
+          var arrcode = document.getElementById("arrcode2");
+          arrcode2.value = " "
+          var arrcode = document.getElementById("arrcode3");
+          arrcode3.value = " "
+          var arrcode = document.getElementById("arrcode4");
+          arrcode4.value = " "
+          var arrcode = document.getElementById("arrcode5");
+          arrcode5.value = " "
+          document.getElementById('arrcode').style.backgroundColor = 'white'
+          document.getElementById('arrcode1').style.backgroundColor = 'white'
+          document.getElementById('arrcode2').style.backgroundColor = 'white'
+          document.getElementById('arrcode3').style.backgroundColor = 'white'
+          document.getElementById('arrcode4').style.backgroundColor = 'white'
+          document.getElementById('arrcode5').style.backgroundColor = 'white'
+        };
+
+      var table1 = ['갓난아기\n','거지\n','검은봉지\n','깡패\n','노인\n','대통령\n','볼펜\n','부처님\n','신\n','송아지\n','임금\n','황재\n','전기선\n','천연기념물\n','첫기차\n','태극기\n','하나님\n','할머니\n','할아버지\n','황소\n','흰머리\n'];
+      var table2 = ['하늘\n','경례\n','날다\n','달리기\n','도시락\n','별\n','비\n','비행기\n','빗자루\n','주황색\n','새장\n','아줌마\n','주황\n','안개\n','얼음\n','외국인\n','위협\n','점심\n','점심식사\n'];
+      var table3 = ['금불상\n','꼬부랑길\n','노랑\n','노란색\n','면종류\n','바둑\n','박쥐\n','백사장\n','사냥꾼\n','소스\n','왕관\n','외국옷\n','우산\n','인형\n','장기\n','축구공\n','춤\n','호랑이\n','보살\n'];
+      var table4 = ['개미\n','계곡\n','국민은행\n','낙지\n','다이아몬드\n','드럼\n','바다\n','벌레\n','벼락\n','북\n','선물\n','수족관\n','악기\n','어항\n','여자아이\n','오징어\n','유리\n','초록\n','초록색\n','폭포\n'];
+      var table5 = ['가지\n','동굴\n','물기둥\n','분노\n','분수\n','승리\n','오곡\n','오리\n','오천원권\n','외한은행\n','용\n','작은어머니\n','장모\n','장미\n','조상님\n','조카\n','쥐\n','친척\n','코너\n','파랑\n','파란색\n'];
+      var table6 = ['공원\n','난초\n','남색\n','녹두\n','식물\n','농약\n','대파\n','로또\n','배추\n','부추\n','시금치\n','연못\n','잔디\n','잔디밭\n','지하철\n','진주\n','철도\n','피리\n','호수\n','화원\n'];
+      var table7 = ['고가다리\n','고사리\n','고향친구\n','금\n','꽈리\n','대교\n','더덕\n','두부\n','딸\n','말\n','무우\n','무지개\n','보라색\n','소금\n','소나무\n','교정기\n','카드\n','토끼풀\n','흰색드레스\n','흰색양복\n','흰종이\n'];
+      var table8 = ['갈대\n','거미\n','거북이\n','고급차\n','골프공\n','기사\n','라면\n','모자\n','못\n','바닷가\n','빨간계단\n','소\n','신문사\n','쌀\n','양\n','엘리베이터\n','염소\n','운전수\n','월계관\n','저녁\n','초\n','총알\n','팔\n','해변\n'];
+      var table9 = ['가발\n','개나리\n','공\n','구두\n','구렁이\n','대머리\n','도끼빗\n','도라지\n','둥글레\n','만원버스\n','맨홀뚜껑\n','머리\n','목사\n','빨래\n','사거리\n','세쌍둥이\n','스티커\n','신발\n','신부님\n','연탄\n','원숭이\n'];
+      var table10 = ['1원동전\n','고향집\n','군대\n','군복무\n','농구\n','닭\n','들판\n','마당\n','벽\n','빨간대야\n','다라이\n','살인\n','살해\n','시계\n','지붕\n','창고\n','천막\n','천장\n','첫돌\n','초가집\n','홍수\n'];
+      var table11 = ['개구리밥\n','골키퍼\n','교도소\n','다리\n','도둑\n','돌다리\n','돼지코\n','방안홍수\n','쌍둥이\n','아이들\n','우체국\n','우체부\n','월담\n','유치원생\n','발(사람)\n','젓가락\n','철길\n','학원생\n'];
+      var table12 = ['가슴\n','가위\n','고양이\n','나무\n','다리\n','담요\n','돼지\n','렌턴\n','빈병\n','산속\n','성폭행\n','수도꼭지\n','아기와엄마\n','영수증\n','영화\n','짝짓기\n','코끼리\n','포유류\n'];
+      var table13 = ['계란\n','공동묘지\n','관\n','나팔꽃\n','남녀성기\n','농협\n','달걀\n','등\n','무덤\n','발바닥\n','방\n','배\n','삼베\n','상복\n','속옷\n','손목시계\n','앞치마\n','영구차\n','유방\n','죽음\n','초콜렛\n','팬티\n'];
+      var table14 = ['감\n','견인차\n','남자\n','대마\n','리무진\n','매춘부\n','맨발\n','모래\n','무릎\n','변기\n','손목\n','악당\n','양말\n','어금니\n','자동차\n','좀비\n','지게차\n','처남\n','콩\n','홍시\n','화장실\n'];
+      var table15 = ['강가\n','거인\n','경운기\n','농기구\n','도끼\n','도로\n','동상\n','망치\n','벽돌\n','빨랫줄\n','삽\n','손도끼\n','스포츠\n','싸움\n','아빠\n','안경\n','어머니\n','운동경기\n','추석\n','피\n','헬스\n'];
+      var table16 = ['군인\n','군입대\n','금전출납\n','노트\n','똥\n','목화\n','박스\n','빙산\n','상자\n','서류\n','성경책\n','솜\n','시험\n','옥매트\n','제단\n','제사음식\n','제사\n','차표\n','책\n','키위\n','휴지\n'];
+      var table17 = ['고기종류\n','공주\n','공터\n','교회\n','낚시\n','넥타이\n','담요\n','등산\n','면허증\n','물고기\n','법당\n','사탕\n','생선\n','신령\n','아가씨\n','옥수수\n','이불\n','작은아버지\n','절\n','쥐포\n','큰아버지\n'];
+      var table18 = ['가시나무\n','고무인형\n','공사판\n','권총\n','녹차\n','놀람\n','단무지\n','대나무\n','사진\n','아메리카노\n','아버지\n','예술가\n','예술품\n','오토바이\n','올케\n','자전거\n','종\n','콩나물\n','퀵보드\n','포스터\n','홍차\n'];
+      var table19 = ['119차\n','119\n','가게\n','감나무\n','경찰\n','매장\n','버섯\n','불\n','빨간과일\n','빨간색\n','사과\n','소방대원\n','술집\n','슈퍼마켓\n','아기고양이\n','아랫니\n','외할머니\n','일기\n','저금통\n','적색\n','총각김치\n'];
+      var table20 = ['감자\n','거미줄\n','거수경례\n','고구마\n','귤\n','귤나무\n','늙은호박\n','담배\n','라이타\n','베란다\n','사우나\n','성냥\n','오렌지\n','오리알\n','이모\n','장난감\n','찜질방\n','철가방\n','파리\n'];
+      var table21 = ['교실\n','남자아이\n','박수\n','브래지어\n','분장실\n','생맥주\n','선생님\n','소년\n','손\n','손가락\n','손톱\n','수능시험\n','식권\n','젖소\n','지도\n','청소년\n','커피\n','탁자\n','풀\n','황토\n'];
+      var table22 = ['감옥\n','경찰서\n','계수나무\n','고소\n','공항\n','느티나무\n','마법사\n','미궁\n','미로\n','미스터리\n','밭두렁\n','뱀\n','셔터문\n','소송\n','수갑\n','시비\n','신비\n','애무\n','인질\n','잡동사니\n','적개심\n','채권\n','채무\n'];
+      var table23 = ['공예\n','극장\n','기술\n','기술자\n','노천극장\n','눈\n','비디오\n','영사기\n','영화관\n','자동차키\n','정보통신\n','주식\n','주식증권\n','증권\n','카메라\n','컴퓨터\n','케이블선\n','케이블카\n','피아노\n','핸드폰\n'];
+      var table24 = ['구기자나무\n','낭떠러지\n','대추\n','대추나무\n','동창\n','뚜껑\n','머플러\n','버스정류장\n','버스타기\n','범인\n','술\n','안내원\n','와인\n','요정\n','음료\n','이사짐\n','자판기\n','절벽\n','화물트럭\n'];
+      var table25 = ['결혼\n','꽃\n','내연녀\n','담쟁이덩굴\n','덩굴\n','머리감기\n','섹스\n','악어\n','앞문\n','애인\n','옛연인\n','옹기\n','정류장\n','조화꽃\n','친구\n','침몰\n','트럭\n','포옹\n','프라이펜\n','화물\n'];
+      var table26 = ['남자친구\n','냉이\n','몽정\n','바늘\n','새색시\n','성인\n','수녀\n','숲속\n','신부\n','쑥\n','암벽\n','언덕\n','오줌\n','잔치\n','창문\n','키스\n','풀밭\n','한복\n','화분\n','화장실의변\n'];
+      var table27 = ['건물키\n','계량한복\n','긴머리\n','돈봉투\n','돈을줍다\n','동전\n','마늘\n','말미잘\n','매실\n','매화\n','매화나무\n','모텔\n','생강\n','수표\n','아파트\n','양복\n','양주\n','여관\n','학교\n','현금지급기\n'];
+      var table28 = ['거북선\n','귀걸이\n','귀뚜라미\n','냉면\n','당첨\n','도마뱀\n','도자기\n','동생\n','딱정벌레\n','목걸이\n','바다표범\n','반지\n','보석\n','사슴벌레\n','상장\n','장식물\n','지렁이\n','침팬치\n','패물\n','형제\n','훈장\n'];
+      var table29 = ['가마솥\n','갈색머리\n','골프채\n','단발머리\n','뚱보\n','맛\n','방앗간\n','쇠\n','얼음과자\n','연장\n','열쇠\n','임신부\n','전기공사\n','철\n','철공소\n','카페트\n','폭발\n','호미\n','활\n'];
+      var table30 = ['가방\n','구상나무\n','냄비\n','대형마트\n','대형슈퍼\n','도토리\n','믹서\n','믹스기\n','상수리나무\n','선풍기\n','소파\n','손지갑\n','솥\n','스포츠머리\n','에어컨\n','여행가방\n','외국여행\n','음료수\n','인삼\n','인삼즙\n','전자제품\n','컵\n','테이프\n'];
+      var table31 = ['가족\n','강연\n','기린\n','면도기\n','배설물\n','복숭아씨\n','부모\n','부모님\n','뿔\n','사슴\n','사회자\n','설명\n','수염\n','신분증\n','악어새끼\n','얼굴\n','연설\n','집주소\n','커튼\n'];
+      var table32 = ['가구\n','논\n','단추\n','모종\n','묘목\n','벼\n','밥\n','식물\n','식물원\n','열매\n','오이\n','온실\n','유자\n','유자나무\n','정원\n','지팡이\n','채소\n','칠엽수\n','푸른고추\n','푸른호박\n'];
+      var table33 = ['개\n','강아지\n','검은드레스\n','검은양복\n','검정옷\n','경비원\n','광채\n','기름\n','난로\n','달팽이\n','불독\n','산삼\n','어부\n','용광로\n','전깃줄\n','지진\n','체인\n','태풍\n'];
+      var table34 = ['가수\n','강아지풀\n','공연\n','귀\n','귓속말\n','뉴스\n','드라마\n','목\n','문\n','발가락\n','배우\n','사촌\n','쇼\n','연극\n','장관\n','저수지\n','정치가\n','출입구\n','파도\n','해일\n','현관\n'];
+      var table35 = ['개암나무\n','군복\n','둔기\n','매듭\n','몽둥이\n','무기\n','물망초\n','북한군\n','사열\n','사촌동생\n','산호\n','야구글러브\n','에델바이스\n','우엉\n','잉어\n','전쟁\n','총\n','칼\n','해양경찰\n','형사\n','호박\n'];
+      var table36 = ['국화\n','달러\n','돈\n','돈가방\n','돈다발\n','동백나무\n','백화점\n','복권당첨\n','시장\n','아는여자\n','아는언니\n','어음\n','왕비\n','외국돈\n','장례식장\n','재산\n','지폐\n','천사\n','통장\n','화폐\n'];
+      var table37 = ['공양\n','구두솔\n','구두약\n','구명보트\n','가로등\n','미용사\n','반짝이는빛\n','불빛\n','수증기\n','우편물\n','이발사\n','윗니\n','전화\n','조명\n','주사\n','지하수\n','추수\n','포도\n','후레쉬\n'];
+      var table38 = ['가전제품\n','검사\n','결론\n','궁전\n','냉장고\n','단풍나무\n','대궐\n','면접관\n','목욕탕\n','변호사\n','빛\n','성\n','앨범\n','자장면\n','장롱\n','종양\n','주차장\n','침대\n','판사\n','팔뒷꿈치\n'];
+      var table39 = ['국수\n','드럼통\n','떡\n','미역국\n','바가지\n','비빔밥\n','빵\n','식당\n','아는아이\n','앞니\n','영어시험\n','음식\n','자켓\n','잡곡밥\n','전시회\n','종업원\n','죽\n','집\n','화장\n'];
+      var table40 = ['가마니\n','강낭콩\n','검은돼지\n','교통사고\n','길을헤매다\n','나체\n','내장\n','대학교\n','도망\n','발톱\n','수박\n','쓰레기통\n','암\n','의사\n','집시\n','털\n','흉터\n'];
+      var table41 = ['간호사\n','결혼식\n','넓은도로\n','무당\n','부적\n','사법기관\n','석유\n','성직자\n','송곳니\n','스님\n','연예인\n','운동장\n','이빨\n','율무차\n','주유소\n','장애인\n','포장길\n','축구\n'];
+      var table42 = ['골목\n','골목길\n','곰팡이\n','관공서\n','기차\n','기차표\n','도사\n','발표회\n','방송국\n','새\n','앵무새\n','엄지손가락\n','우편\n','인력거\n','전철\n','찬양가\n','철도\n','칠면조\n','편지\n'];
+      var table43 = ['간식\n','계단 밑\n','곤충\n','과자\n','남자아이들\n','놀이공원\n','대학생\n','밧줄\n','빨래줄\n','송충이\n','쇠줄\n','왕자\n','잠자리\n','장인\n','전화송신탑\n','항아리\n','횡단보도\n'];
+      var table44 = ['계단\n','나무공예\n','남동생\n','녹색벌레\n','독사\n','돌\n','디지털카메라\n','물\n','바다게\n','사자\n','소주\n','앞마당\n','자갈\n','저승사자\n','젊은이\n','철거\n','해골\n','해삼\n','형\n'];
+      var table45 = ['굿\n','귀신\n','교수\n','달맞이꽃\n','마스크\n','무속인\n','보호구\n','복면\n','시체\n','짚\n','진주목걸이\n','여자귀신\n','어부\n','영혼\n','유령\n','이혼\n','장송곡\n','허공\n','핵폭발\n','헬멧\n'];
+
+      function filter(){
+          var sevalue = document.getElementById("search").value
+          var con = sevalue.length
+          if (search.value == ""){alert("입력값이 없습니다.")}
+          else {
+              for (i = 0; i < table1.length; i++) {
+                if (table1[i].indexOf(sevalue) == 0){
+                  if(table1[i].length-1 == con){
+                  value.value = document.getElementById("one1").value
+                  document.getElementById('value').type = 'button';
+                  break;
+                }else{console.log("k");break;}}};
+              for (i = 0; i < table2.length; i++) {
+               if (table2[i].indexOf(sevalue) == 0){
+                 if(table2[i].length-1 == con){
+                 value.value = document.getElementById("one2").value
+                 document.getElementById('value').type = 'button';
+                 break;
+               }else{console.log("k");break;}}};
+              for (i = 0; i < table3.length; i++) {
+                if (table3[i].indexOf(sevalue) == 0){
+                  if(table3[i].length-1 == con){
+                  value.value = document.getElementById("one3").value
+                  document.getElementById('value').type = 'button';
+                  break;
+                }else{console.log("k");break;}}};
+                for (i = 0; i < table4.length; i++) {
+                  if (table4[i].indexOf(sevalue) == 0){
+                    if(table4[i].length-1 == con){
+                    value.value = document.getElementById("one4").value
+                    document.getElementById('value').type = 'button';
+                    break;
+                  }else{console.log("k");break;}}};
+                for (i = 0; i < table5.length; i++) {
+                  if (table5[i].indexOf(sevalue) == 0){
+                    if(table5[i].length-1 == con){
+                    value.value = document.getElementById("one5").value
+                    document.getElementById('value').type = 'button';
+                    break;
+                  }else{console.log("k");break;}}};
+                for (i = 0; i < table6.length; i++) {
+                  if (table6[i].indexOf(sevalue) == 0){
+                    if(table6[i].length-1 == con){
+                    value.value = document.getElementById("one6").value
+                    document.getElementById('value').type = 'button';
+                    break;
+                    }else{console.log("k");break;}}};
+                for (i = 0; i < table7.length; i++) {
+                    if (table7[i].indexOf(sevalue) == 0){
+                      if(table7[i].length-1 == con){
+                      value.value = document.getElementById("one7").value
+                      document.getElementById('value').type = 'button';
+                      break;
+                    }else{console.log("k");break;}}};
+                  for (i = 0; i < table8.length; i++) {
+                    if (table8[i].indexOf(sevalue) == 0){
+                      if(table8[i].length-1 == con){
+                      value.value = document.getElementById("one8").value
+                      document.getElementById('value').type = 'button';
+                      break;
+                    }else{console.log("k");break;}}};
+                  for (i = 0; i < table9.length; i++) {
+                    if (table9[i].indexOf(sevalue) == 0){
+                      if(table9[i].length-1 == con){
+                      value.value = document.getElementById("one9").value
+                      document.getElementById('value').type = 'button';
+                      break;
+                    }else{console.log("k");break;}}};
+                  for (i = 0; i < table10.length; i++) {
+                    if (table10[i].indexOf(sevalue) == 0){
+                      if(table10[i].length-1 == con){
+                      value.value = document.getElementById("one10").value
+                      document.getElementById('value').type = 'button';
+                      break;
+                    }else{console.log("k");break;}}};
+                  for (i = 0; i < table11.length; i++) {
+                    if (table11[i].indexOf(sevalue) == 0){
+                      if(table11[i].length-1 == con){
+                      value.value = document.getElementById("one11").value
+                      document.getElementById('value').type = 'button';
+                      break;
+                    }else{console.log("k");break;}}};
+                  for (i = 0; i < table12.length; i++) {
+                    if (table12[i].indexOf(sevalue) == 0){
+                      if(table12[i].length-1 == con){
+                      value.value = document.getElementById("one12").value
+                      document.getElementById('value').type = 'button';
+                      break;
+                    }else{console.log("k");break;}}};
+                  for (i = 0; i < table13.length; i++) {
+                    if (table13[i].indexOf(sevalue) == 0){
+                      if(table13[i].length-1 == con){
+                      value.value = document.getElementById("one13").value
+                      document.getElementById('value').type = 'button';
+                      break;
+                    }else{console.log("k");break;}}};
+                  for (i = 0; i < table14.length; i++) {
+                    if (table14[i].indexOf(sevalue) == 0){
+                      if(table14[i].length-1 == con){
+                      value.value = document.getElementById("one14").value
+                      document.getElementById('value').type = 'button';
+                      break;
+                    }else{console.log("k");break;}}};
+                  for (i = 0; i < table15.length; i++) {
+                    if (table15[i].indexOf(sevalue) == 0){
+                      if(table15[i].length-1 == con){
+                      value.value = document.getElementById("one15").value
+                      document.getElementById('value').type = 'button';
+                      break;
+                    }else{console.log("k");break;}}};
+                  for (i = 0; i < table16.length; i++) {
+                    if (table16[i].indexOf(sevalue) == 0){
+                      if(table16[i].length-1 == con){
+                      value.value = document.getElementById("one16").value
+                      document.getElementById('value').type = 'button';
+                      break;
+                    }else{console.log("k");break;}}};
+                  for (i = 0; i < table17.length; i++) {
+                    if (table17[i].indexOf(sevalue) == 0){
+                      if(table17[i].length-1 == con){
+                      value.value = document.getElementById("one17").value
+                      document.getElementById('value').type = 'button';
+                      break;
+                    }else{console.log("k");break;}}};
+                  for (i = 0; i < table18.length; i++) {
+                    if (table18[i].indexOf(sevalue) == 0){
+                      if(table18[i].length-1 == con){
+                      value.value = document.getElementById("one18").value
+                      document.getElementById('value').type = 'button';
+                      break;
+                    }else{console.log("k");break;}}};
+                  for (i = 0; i < table19.length; i++) {
+                    if (table19[i].indexOf(sevalue) == 0){
+                      if(table19[i].length-1 == con){
+                      value.value = document.getElementById("one19").value
+                      document.getElementById('value').type = 'button';
+                      break;
+                    }else{console.log("k");break;}}};
+                  for (i = 0; i < table20.length; i++) {
+                    if (table20[i].indexOf(sevalue) == 0){
+                      if(table20[i].length-1 == con){
+                      value.value = document.getElementById("one20").value
+                      document.getElementById('value').type = 'button';
+                      break;
+                    }else{console.log("k");break;}}};
+                  for (i = 0; i < table21.length; i++) {
+                    if (table21[i].indexOf(sevalue) == 0){
+                      if(table21[i].length-1 == con){
+                      value.value = document.getElementById("one21").value
+                      document.getElementById('value').type = 'button';
+                      break;
+                    }else{console.log("k");break;}}};
+                  for (i = 0; i < table22.length; i++) {
+                    if (table22[i].indexOf(sevalue) == 0){
+                      if(table22[i].length-1 == con){
+                      value.value = document.getElementById("one22").value
+                      document.getElementById('value').type = 'button';
+                      break;
+                    }else{console.log("k");break;}}};
+                  for (i = 0; i < table23.length; i++) {
+                    if (table23[i].indexOf(sevalue) == 0){
+                      if(table23[i].length-1 == con){
+                      value.value = document.getElementById("one23").value
+                      document.getElementById('value').type = 'button';
+                      break;
+                    }else{console.log("k");break;}}};
+                  for (i = 0; i < table24.length; i++) {
+                    if (table24[i].indexOf(sevalue) == 0){
+                      if(table24[i].length-1 == con){
+                      value.value = document.getElementById("one24").value
+                      document.getElementById('value').type = 'button';
+                      break;
+                    }else{console.log("k");break;}}};
+                  for (i = 0; i < table25.length; i++) {
+                    if (table25[i].indexOf(sevalue) == 0){
+                      if(table25[i].length-1 == con){
+                      value.value = document.getElementById("one25").value
+                      document.getElementById('value').type = 'button';
+                      break;
+                    }else{console.log("k");break;}}};
+                  for (i = 0; i < table26.length; i++) {
+                    if (table26[i].indexOf(sevalue) == 0){
+                      if(table26[i].length-1 == con){
+                      value.value = document.getElementById("one26").value
+                      document.getElementById('value').type = 'button';
+                      break;
+                    }else{console.log("k");break;}}};
+                  for (i = 0; i < table27.length; i++) {
+                    if (table27[i].indexOf(sevalue) == 0){
+                      if(table27[i].length-1 == con){
+                      value.value = document.getElementById("one27").value
+                      document.getElementById('value').type = 'button';
+                      break;
+                    }else{console.log("k");break;}}};
+                  for (i = 0; i < table28.length; i++) {
+                    if (table28[i].indexOf(sevalue) == 0){
+                      if(table28[i].length-1 == con){
+                      value.value = document.getElementById("one28").value
+                      document.getElementById('value').type = 'button';
+                      break;
+                    }else{console.log("k");break;}}};
+                  for (i = 0; i < table29.length; i++) {
+                    if (table29[i].indexOf(sevalue) == 0){
+                      if(table29[i].length-1 == con){
+                      value.value = document.getElementById("one29").value
+                      document.getElementById('value').type = 'button';
+                      break;
+                    }else{console.log("k");break;}}};
+                  for (i = 0; i < table30.length; i++) {
+                    if (table30[i].indexOf(sevalue) == 0){
+                      if(table30[i].length-1 == con){
+                      value.value = document.getElementById("one30").value
+                      document.getElementById('value').type = 'button';
+                      break;
+                    }else{console.log("k");break;}}};
+                  for (i = 0; i < table31.length; i++) {
+                    if (table31[i].indexOf(sevalue) == 0){
+                      if(table31[i].length-1 == con){
+                      value.value = document.getElementById("one31").value
+                      document.getElementById('value').type = 'button';
+                      break;
+                    }else{console.log("k");break;}}};
+                  for (i = 0; i < table32.length; i++) {
+                    if (table32[i].indexOf(sevalue) == 0){
+                      if(table32[i].length-1 == con){
+                      value.value = document.getElementById("one32").value
+                      document.getElementById('value').type = 'button';
+                      break;
+                    }else{console.log("k");break;}}};
+                  for (i = 0; i < table33.length; i++) {
+                    if (table33[i].indexOf(sevalue) == 0){
+                      if(table33[i].length-1 == con){
+                      value.value = document.getElementById("one33").value
+                      document.getElementById('value').type = 'button';
+                      break;
+                    }else{console.log("k");break;}}};
+                  for (i = 0; i < table34.length; i++) {
+                    if (table34[i].indexOf(sevalue) == 0){
+                      if(table34[i].length-1 == con){
+                      value.value = document.getElementById("one34").value
+                      document.getElementById('value').type = 'button';
+                      break;
+                    }else{console.log("k");break;}}};
+                  for (i = 0; i < table35.length; i++) {
+                    if (table35[i].indexOf(sevalue) == 0){
+                      if(table35[i].length-1 == con){
+                      value.value = document.getElementById("one35").value
+                      document.getElementById('value').type = 'button';
+                      break;
+                    }else{console.log("k");break;}}};
+                  for (i = 0; i < table36.length; i++) {
+                    if (table36[i].indexOf(sevalue) == 0){
+                      if(table36[i].length-1 == con){
+                      value.value = document.getElementById("one36").value
+                      document.getElementById('value').type = 'button';
+                      break;
+                    }else{console.log("k");break;}}};
+                  for (i = 0; i < table37.length; i++) {
+                    if (table37[i].indexOf(sevalue) == 0){
+                      if(table37[i].length-1 == con){
+                      value.value = document.getElementById("one37").value
+                      document.getElementById('value').type = 'button';
+                      break;
+                    }else{console.log("k");break;}}};
+                  for (i = 0; i < table38.length; i++) {
+                    if (table38[i].indexOf(sevalue) == 0){
+                      if(table38[i].length-1 == con){
+                      value.value = document.getElementById("one38").value
+                      document.getElementById('value').type = 'button';
+                      break;
+                    }else{console.log("k");break;}}};
+                  for (i = 0; i < table39.length; i++) {
+                    if (table39[i].indexOf(sevalue) == 0){
+                      if(table39[i].length-1 == con){
+                      value.value = document.getElementById("one39").value
+                      document.getElementById('value').type = 'button';
+                      break;
+                    }else{console.log("k");break;}}};
+                  for (i = 0; i < table40.length; i++) {
+                    if (table40[i].indexOf(sevalue) == 0){
+                      if(table40[i].length-1 == con){
+                      value.value = document.getElementById("one40").value
+                      document.getElementById('value').type = 'button';
+                      break;
+                    }else{console.log("k");break;}}};
+                  for (i = 0; i < table41.length; i++) {
+                    if (table41[i].indexOf(sevalue) == 0){
+                      if(table41[i].length-1 == con){
+                      value.value = document.getElementById("one41").value
+                      document.getElementById('value').type = 'button';
+                      break;
+                    }else{console.log("k");break;}}};
+                  for (i = 0; i < table42.length; i++) {
+                    if (table42[i].indexOf(sevalue) == 0){
+                      if(table42[i].length-1 == con){
+                      value.value = document.getElementById("one42").value
+                      document.getElementById('value').type = 'button';
+                      break;
+                    }else{console.log("k");break;}}};
+                  for (i = 0; i < table43.length; i++) {
+                    if (table43[i].indexOf(sevalue) == 0){
+                      if(table43[i].length-1 == con){
+                      value.value = document.getElementById("one43").value
+                      document.getElementById('value').type = 'button';
+                      break;
+                    }else{console.log("k");break;}}};
+                  for (i = 0; i < table44.length; i++) {
+                    if (table44[i].indexOf(sevalue) == 0){
+                      if(table44[i].length-1 == con){
+                      value.value = document.getElementById("one44").value
+                      document.getElementById('value').type = 'button';
+                      break;
+                    }else{console.log("k");break;}}};
+                  for (i = 0; i < table45.length; i++) {
+                    if (table45[i].indexOf(sevalue) == 0){
+                      if(table45[i].length-1 == con){
+                      value.value = document.getElementById("one45").value
+                      document.getElementById('value').type = 'button';
+                      break;
+                    }else{console.log("k");break;}}};
+          };
+        };
+        function colorchange(){
+          if (value.value > 0 && value.value <= 10)
+            {document.getElementById('value').style.backgroundColor = 'yellow'}
+          if (value.value > 10 && value.value <= 20)
+            {document.getElementById('value').style.backgroundColor = '#0099ff'}
+          if (value.value > 20 && value.value <= 30)
+            {document.getElementById('value').style.backgroundColor = '#ff0000'}
+          if (value.value > 30 && value.value <= 40)
+            {document.getElementById('value').style.backgroundColor = '#AAAAAA'}
+          if (value.value > 40 && value.value <= 45)
+            {document.getElementById('value').style.backgroundColor = '#00cc00'}
+        };
+
+        function changecode(){
+          if (arrcode.value > 0 && arrcode.value <= 10)
+            {document.getElementById('arrcode').style.backgroundColor = 'yellow'}
+          if (arrcode.value > 10 && arrcode.value <= 20)
+            {document.getElementById('arrcode').style.backgroundColor = '#0099ff'}
+          if (arrcode.value > 20 && arrcode.value <= 30)
+            {document.getElementById('arrcode').style.backgroundColor = '#ff0000'}
+          if (arrcode.value > 30 && arrcode.value <= 40)
+            {document.getElementById('arrcode').style.backgroundColor = '#AAAAAA'}
+          if (arrcode.value > 40 && arrcode.value <= 45)
+            {document.getElementById('arrcode').style.backgroundColor = '#00cc00'}
+            if (arrcode1.value > 0 && arrcode1.value <= 10)
+              {document.getElementById('arrcode1').style.backgroundColor = 'yellow'}
+            if (arrcode1.value > 10 && arrcode1.value <= 20)
+              {document.getElementById('arrcode1').style.backgroundColor = '#0099ff'}
+            if (arrcode1.value > 20 && arrcode1.value <= 30)
+              {document.getElementById('arrcode1').style.backgroundColor = '#ff0000'}
+            if (arrcode1.value > 30 && arrcode1.value <= 40)
+              {document.getElementById('arrcode1').style.backgroundColor = '#AAAAAA'}
+            if (arrcode1.value > 40 && arrcode1.value <= 45)
+              {document.getElementById('arrcode1').style.backgroundColor = '#00cc00'}
+              if (arrcode2.value > 0 && arrcode2.value <= 10)
+                {document.getElementById('arrcode2').style.backgroundColor = 'yellow'}
+              if (arrcode2.value > 10 && arrcode2.value <= 20)
+                {document.getElementById('arrcode2').style.backgroundColor = '#0099ff'}
+              if (arrcode2.value > 20 && arrcode2.value <= 30)
+                {document.getElementById('arrcode2').style.backgroundColor = '#ff0000'}
+              if (arrcode2.value > 30 && arrcode2.value <= 40)
+                {document.getElementById('arrcode2').style.backgroundColor = '#AAAAAA'}
+              if (arrcode2.value > 40 && arrcode2.value <= 45)
+                {document.getElementById('arrcode2').style.backgroundColor = '#00cc00'}
+                if (arrcode3.value > 0 && arrcode3.value <= 10)
+                  {document.getElementById('arrcode3').style.backgroundColor = 'yellow'}
+                if (arrcode3.value > 10 && arrcode3.value <= 20)
+                  {document.getElementById('arrcode3').style.backgroundColor = '#0099ff'}
+                if (arrcode3.value > 20 && arrcode3.value <= 30)
+                  {document.getElementById('arrcode3').style.backgroundColor = '#ff0000'}
+                if (arrcode3.value > 30 && arrcode3.value <= 40)
+                  {document.getElementById('arrcode3').style.backgroundColor = '#AAAAAA'}
+                if (arrcode3.value > 40 && arrcode3.value <= 45)
+                  {document.getElementById('arrcode3').style.backgroundColor = '#00cc00'}
+                  if (arrcode4.value > 0 && arrcode4.value <= 10)
+                    {document.getElementById('arrcode4').style.backgroundColor = 'yellow'}
+                  if (arrcode4.value > 10 && arrcode4.value <= 20)
+                    {document.getElementById('arrcode4').style.backgroundColor = '#0099ff'}
+                  if (arrcode4.value > 20 && arrcode4.value <= 30)
+                    {document.getElementById('arrcode4').style.backgroundColor = '#ff0000'}
+                  if (arrcode4.value > 30 && arrcode4.value <= 40)
+                    {document.getElementById('arrcode4').style.backgroundColor = '#AAAAAA'}
+                  if (arrcode4.value > 40 && arrcode4.value <= 45)
+                    {document.getElementById('arrcode4').style.backgroundColor = '#00cc00'}
+                    if (arrcode5.value > 0 && arrcode5.value <= 10)
+                      {document.getElementById('arrcode5').style.backgroundColor = 'yellow'}
+                    if (arrcode5.value > 10 && arrcode5.value <= 20)
+                      {document.getElementById('arrcode5').style.backgroundColor = '#0099ff'}
+                    if (arrcode5.value > 20 && arrcode5.value <= 30)
+                      {document.getElementById('arrcode5').style.backgroundColor = '#ff0000'}
+                    if (arrcode5.value > 30 && arrcode5.value <= 40)
+                      {document.getElementById('arrcode5').style.backgroundColor = '#AAAAAA'}
+                    if (arrcode5.value > 40 && arrcode5.value <= 45)
+                      {document.getElementById('arrcode5').style.backgroundColor = '#00cc00'}
+        };
+        function hid(){
+          document.getElementById('value').type = 'hidden';
+          document.getElementById('search').value = "";
+        };
+        function rem(){
+          if (arrys.length == 1){
+          arr.pop()
+          arrys.pop()
+          document.getElementById('arrcode').value = " "
+          document.getElementById('arrcode').style.backgroundColor = 'white'
+        };
+          if (arrys.length == 2){
+          arr.pop()
+          arrys.pop()
+          document.getElementById('arrcode1').value = " "
+          document.getElementById('arrcode1').style.backgroundColor = 'white'
+          };
+          if (arrys.length == 3){
+          arr.pop()
+          arrys.pop()
+          document.getElementById('arrcode2').value = " "
+          document.getElementById('arrcode2').style.backgroundColor = 'white'
+          };
+          if (arrys.length == 4){
+          arr.pop()
+          arrys.pop()
+          document.getElementById('arrcode3').value = " "
+          document.getElementById('arrcode3').style.backgroundColor = 'white'
+          };
+          if (arrys.length == 5){
+          arr.pop()
+          arrys.pop()
+          document.getElementById('arrcode4').value = " "
+          document.getElementById('arrcode4').style.backgroundColor = 'white'
+          };
+          if (arrys.length == 6){
+          arr.pop()
+          arrys.pop()
+          document.getElementById('arrcode5').value = " "
+          document.getElementById('arrcode5').style.backgroundColor = 'white'
+          };
+        };
+
+  </script>
+  <body>
+    <h1>꿈 키워드 로또번호 조합</h1>
+    <div class="hiddennum">
+    <input type="hidden" id="display">
+    </div>
+    <br><br><br>
+    <div class = "nubox">
+    <input type="button" id="arrcode" value=" ">
+    <input type="button" id="arrcode1" value=" ">
+    <input type="button" id="arrcode2" value=" ">
+    <input type="button" id="arrcode3" value=" ">
+    <input type="button" id="arrcode4" value=" ">
+    <input type="button" id="arrcode5" value=" ">
+    <input type="button" id="del" onclick="del()" value="초기화">
+    <input type="button" id="era" onclick="rem()" value="지우기">
+    <input type="button" id="ran" onclick="randomNumber()" value="난수생성">
+    </div>
+
+    <br>
+    <div class = "searchNumber">
+    <input type="search" id="search" name ="q" placeholder="keyword">
+    <input type="button" id="searching" value="검색" onclick="filter(),colorchange()">
+      <!-- <input type="button" id="searching" value="저장"> -->
+    <br><br>
+    <input type="button" id="value1" value=" ">
+    <input type="hidden" id="value" onclick="add(Number(this.value)),aa(),changecode(),hid()" value=" ">
+    <input type="button" id="value1" value=" ">
+    <br><br>
+    </div>
+    <br>
+    <div id = documentation>
+      <h3>
+          <br>사용방법
+          <br> 1)꿈의 키워드를 검색 또는 직접 찾습니다.
+          <br> 2)번호를 클릭 합니다.
+          <br> 3)조합은 자동으로 정열 됩니다,
+                (부족한 숫자는 난수로 채워보세요)
+        </h3>
+    </div>
+    <div id = "maintable">
+    <table class="type01">
+    <tr><th scope="row">숫자</th><td>키워드</td></tr>
+    <tr><th scope="row"><input id = "one1" type="button" value=" 1 " onclick="add(1),aa(),changecode()"></th><td><script type ="text/javascript">document.write('<b id = keycss1>' + table1 + '</b>')</script></td></tr>
+    <tr><th scope="row"><input id = "one2" type="button" value=" 2 " onclick="add(2),aa(),changecode()"></th><td><script type ="text/javascript">document.write('<b id = keycss2>' + table2 + '</b>')</script></td></tr>
+    <tr><th scope="row"><input id = "one3" type="button" value=" 3 " onclick="add(3),aa(),changecode()"></th><td><script type ="text/javascript">document.write('<br><b id = keycss3>' + table3 + '</b>')</script></td></tr>
+    <tr><th scope="row"><input id = "one4" type="button" value=" 4 " onclick="add(4),aa(),changecode()"></th><td><script type ="text/javascript">document.write('<b id = keycss4>' + table4 + '</b>')</script></td></tr>
+    <tr><th scope="row"><input id = "one5" type="button" value=" 5 " onclick="add(5),aa(),changecode()"></th><td><script type ="text/javascript">document.write('<b id = keycss5>' + table5 + '</b>')</script></td></tr>
+    <tr><th scope="row"><input id = "one6" type="button" value=" 6 " onclick="add(6),aa(),changecode()"></th><td><script type ="text/javascript">document.write('<b id = keycss6>' + table6 + '</b>')</script></td></tr>
+    <tr><th scope="row"><input id = "one7" type="button" value=" 7 " onclick="add(7),aa(),changecode()"></th><td><script type ="text/javascript">document.write('<b id = keycss7>' + table7 + '</b>')</script></td></tr>
+    <tr><th scope="row"><input id = "one8" type="button" value=" 8 " onclick="add(8),aa(),changecode()"></th><td><script type ="text/javascript">document.write('<b id = keycss8>' + table8 + '</b>')</script></td></tr>
+    <tr><th scope="row"><input id = "one9" type="button" value=" 9 " onclick="add(9),aa(),changecode()"></th><td><script type ="text/javascript">document.write('<b id = keycss9>' + table9 + '</b>')</script></td></tr>
+    <tr><th scope="row"><input id = "one10" type="button" value="10" onclick="add(10),aa(),changecode()"></th><td><script type ="text/javascript">document.write('<b id = keycss10>' + table10 + '</b>')</script></td></tr>
+    <tr><th scope="row"><input id = "one11" type="button" value="11" onclick="add(11),aa(),changecode()"></th><td><script type ="text/javascript">document.write('<b id = keycss11>' + table11 + '</b>')</script></td></tr>
+    <tr><th scope="row"><input id = "one12" type="button" value="12" onclick="add(12),aa(),changecode()"></th><td><script type ="text/javascript">document.write('<b id = keycss12>' + table12 + '</b>')</script></td></tr>
+    <tr><th scope="row"><input id = "one13" type="button" value="13" onclick="add(13),aa(),changecode()"></th><td><script type ="text/javascript">document.write('<b id = keycss13>' + table13 + '</b>')</script></td></tr>
+    <tr><th scope="row"><input id = "one14" type="button" value="14" onclick="add(14),aa(),changecode()"></th><td><script type ="text/javascript">document.write('<b id = keycss14>' + table14 + '</b>')</script></td></tr>
+    <tr><th scope="row"><input id = "one15" type="button" value="15" onclick="add(15),aa(),changecode()"></th><td><script type ="text/javascript">document.write('<b id = keycss15>' + table15 + '</b>')</script></td></tr>
+    <tr><th scope="row"><input id = "one16" type="button" value="16" onclick="add(16),aa(),changecode()"></th><td><script type ="text/javascript">document.write('<b id = keycss16>' + table16 + '</b>')</script></td></tr>
+    <tr><th scope="row"><input id = "one17" type="button" value="17" onclick="add(17),aa(),changecode()"></th><td><script type ="text/javascript">document.write('<b id = keycss17>' + table17 + '</b>')</script></td></tr>
+    <tr><th scope="row"><input id = "one18" type="button" value="18" onclick="add(18),aa(),changecode()"></th><td><script type ="text/javascript">document.write('<b id = keycss18>' + table18 + '</b>')</script></td></tr>
+    <tr><th scope="row"><input id = "one19" type="button" value="19" onclick="add(19),aa(),changecode()"></th><td><script type ="text/javascript">document.write('<b id = keycss19>' + table19 + '</b>')</script></td></tr>
+    <tr><th scope="row"><input id = "one20" type="button" value="20" onclick="add(20),aa(),changecode()"></th><td><script type ="text/javascript">document.write('<b id = keycss20>' + table20 + '</b>')</script></td></tr>
+    <tr><th scope="row"><input id = "one21" type="button" value="21" onclick="add(21),aa(),changecode()"></th><td><script type ="text/javascript">document.write('<b id = keycss21>' + table21 + '</b>')</script></td></tr>
+    <tr><th scope="row"><input id = "one22" type="button" value="22" onclick="add(22),aa(),changecode()"></th><td><script type ="text/javascript">document.write('<b id = keycss22>' + table22 + '</b>')</script></td></tr>
+    <tr><th scope="row"><input id = "one23" type="button" value="23" onclick="add(23),aa(),changecode()"></th><td><script type ="text/javascript">document.write('<b id = keycss23>' + table23 + '</b>')</script></th><td>
+    <tr><th scope="row"><input id = "one24" type="button" value="24" onclick="add(24),aa(),changecode()"></th><td><script type ="text/javascript">document.write('<b id = keycss24>' + table24 + '</b>')</script></td></tr>
+    <tr><th scope="row"><input id = "one25" type="button" value="25" onclick="add(25),aa(),changecode()"></th><td><script type ="text/javascript">document.write('<b id = keycss25>' + table25 + '</b>')</script></td></tr>
+    <tr><th scope="row"><input id = "one26" type="button" value="26" onclick="add(26),aa(),changecode()"></th><td><script type ="text/javascript">document.write('<b id = keycss26>' + table26 + '</b>')</script></td></tr>
+    <tr><th scope="row"><input id = "one27" type="button" value="27" onclick="add(27),aa(),changecode()"></th><td><script type ="text/javascript">document.write('<b id = keycss27>' + table27 + '</b>')</script></td></tr>
+    <tr><th scope="row"><input id = "one28" type="button" value="28" onclick="add(28),aa(),changecode()"></th><td><script type ="text/javascript">document.write('<b id = keycss28>' + table28 + '</b>')</script></td></tr>
+    <tr><th scope="row"><input id = "one29" type="button" value="29" onclick="add(29),aa(),changecode()"></th><td><script type ="text/javascript">document.write('<b id = keycss29>' + table29 + '</b>')</script></td></tr>
+    <tr><th scope="row"><input id = "one30" type="button" value="30" onclick="add(30),aa(),changecode()"></th><td><script type ="text/javascript">document.write('<b id = keycss30>' + table30 + '</b>')</script></td></tr>
+    <tr><th scope="row"><input id = "one31" type="button" value="31" onclick="add(31),aa(),changecode()"></th><td><script type ="text/javascript">document.write('<b id = keycss31>' + table31 + '</b>')</script></td></tr>
+    <tr><th scope="row"><input id = "one32" type="button" value="32" onclick="add(32),aa(),changecode()"></th><td><script type ="text/javascript">document.write('<b id = keycss32>' + table32 + '</b>')</script></td></tr>
+    <tr><th scope="row"><input id = "one33" type="button" value="33" onclick="add(33),aa(),changecode()"></th><td><script type ="text/javascript">document.write('<b id = keycss33>' + table33 + '</b>')</script></td></tr>
+    <tr><th scope="row"><input id = "one34" type="button" value="34" onclick="add(34),aa(),changecode()"></th><td><script type ="text/javascript">document.write('<b id = keycss34>' + table34 + '</b>')</script></td></tr>
+    <tr><th scope="row"><input id = "one35" type="button" value="35" onclick="add(35),aa(),changecode()"></th><td><script type ="text/javascript">document.write('<b id = keycss35>' + table35 + '</b>')</script></td></tr>
+    <tr><th scope="row"><input id = "one36" type="button" value="36" onclick="add(36),aa(),changecode()"></th><td><script type ="text/javascript">document.write('<b id = keycss36>' + table36 + '</b>')</script></td></tr>
+    <tr><th scope="row"><input id = "one37" type="button" value="37" onclick="add(37),aa(),changecode()"></th><td><script type ="text/javascript">document.write('<b id = keycss37>' + table37 + '</b>')</script></td></tr>
+    <tr><th scope="row"><input id = "one38" type="button" value="38" onclick="add(38),aa(),changecode()"></th><td><script type ="text/javascript">document.write('<b id = keycss38>' + table38 + '</b>')</script></td></tr>
+    <tr><th scope="row"><input id = "one39" type="button" value="39" onclick="add(39),aa(),changecode()"></th><td><script type ="text/javascript">document.write('<b id = keycss39>' + table39 + '</b>')</script></td></tr>
+    <tr><th scope="row"><input id = "one40" type="button" value="40" onclick="add(40),aa(),changecode()"></th><td><script type ="text/javascript">document.write('<b id = keycss40>' + table40 + '</b>')</script></td></tr>
+    <tr><th scope="row"><input id = "one41" type="button" value="41" onclick="add(41),aa(),changecode()"></th><td><script type ="text/javascript">document.write('<b id = keycss41>' + table41 + '</b>')</script></td></tr>
+    <tr><th scope="row"><input id = "one42" type="button" value="42" onclick="add(42),aa(),changecode()"></th><td><script type ="text/javascript">document.write('<b id = keycss42>' + table42 + '</b>')</script></td></tr>
+    <tr><th scope="row"><input id = "one43" type="button" value="43" onclick="add(43),aa(),changecode()"></th><td><script type ="text/javascript">document.write('<b id = keycss43>' + table43 + '</b>')</script></td></tr>
+    <tr><th scope="row"><input id = "one44" type="button" value="44" onclick="add(44),aa(),changecode()"></th><td><script type ="text/javascript">document.write('<b id = keycss44>' + table44 + '</b>')</script></td></tr>
+    <tr><th scope="row"><input id = "one45" type="button" value="45" onclick="add(45),aa(),changecode()"></th><td><script type ="text/javascript">document.write('<b id = keycss45>' + table45 + '</b>')</script></td></tr>
+    </table>
+    </div>
+    <br><br>
+    <br><br><br><br>
+    <br>
+    <h5>SWSOFT</h5>
+    <br>
+    <p><div id="disqus_thread"></div>
+        <script>
+        /**
+        *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+        *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+        /*
+        var disqus_config = function () {
+        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+        */
+        (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = 'https://dreamlotto.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </p>
+    <br>
+    <br>
+    <br>
+    <h4>O</h4>
+  </body>
+</html>
