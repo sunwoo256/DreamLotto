@@ -8,17 +8,9 @@ h1{
   background-color: black;
   opacity: 100%;
 }
-  h2{
-    text-align:center;
-    border: 5px solid red;
-    padding: 1px;
-    margin: auto;
-    display: block;
-    width: 150px;
-  }
   h5{
     text-align:right;
-    color: white;
+    color: #ff33ff;
   }
   h4{
     text-align:center;
@@ -40,6 +32,8 @@ body{
 .nubox{
   margin-left: inherit;
   text-align: center;
+  position: sticky;
+  top: 0em;
 }
 
 .hiddennum{
@@ -54,6 +48,7 @@ body{
   background-color: #000000;
   color : #fff;
   opacity: 40%;
+
 }
 .searchNumber {
   text-align:center;
