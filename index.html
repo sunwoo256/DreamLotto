@@ -2,7 +2,7 @@
 <html lang="ko" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Lotto_home</title>
+    <title>꿈이 의미하는 로또 번호 Dream_Lotto</title>
     <link href="style.css" rel="stylesheet" type="text/css"/>
   </head>
   <script>
@@ -13,7 +13,6 @@
         return arr.push(a);
         } else {ko()};
       };
-
       function randomNumber(){
         Array.from(new Set(arr))
         for (i = arrys.length; arrys.length < 6; i++) {
@@ -50,7 +49,7 @@
           window.arrys = set;
         };
         function ko(){
-          alert("6자리 입력이 끝났습니다.")
+          alert("입력완료!")
         };
         function del(){
           arr = [];
@@ -67,14 +66,19 @@
           arrcode4.value = " "
           var arrcode = document.getElementById("arrcode5");
           arrcode5.value = " "
-          document.getElementById('arrcode').style.backgroundColor = 'white'
-          document.getElementById('arrcode1').style.backgroundColor = 'white'
-          document.getElementById('arrcode2').style.backgroundColor = 'white'
-          document.getElementById('arrcode3').style.backgroundColor = 'white'
-          document.getElementById('arrcode4').style.backgroundColor = 'white'
-          document.getElementById('arrcode5').style.backgroundColor = 'white'
+          document.getElementById('arrcode').style.backgroundColor = '#000000'
+          document.getElementById('arrcode').style.opacity = '40%'
+          document.getElementById('arrcode1').style.backgroundColor = '#000000'
+          document.getElementById('arrcode1').style.opacity = '40%'
+          document.getElementById('arrcode2').style.backgroundColor = '#000000'
+          document.getElementById('arrcode2').style.opacity = '40%'
+          document.getElementById('arrcode3').style.backgroundColor = '#000000'
+          document.getElementById('arrcode3').style.opacity = '40%'
+          document.getElementById('arrcode4').style.backgroundColor = '#000000'
+          document.getElementById('arrcode4').style.opacity = '40%'
+          document.getElementById('arrcode5').style.backgroundColor = '#000000'
+          document.getElementById('arrcode5').style.opacity = '40%'
         };
-
       var table1 = ['갓난아기\n','거지\n','검은봉지\n','깡패\n','노인\n','대통령\n','볼펜\n','부처님\n','신\n','송아지\n','임금\n','황재\n','전기선\n','천연기념물\n','첫기차\n','태극기\n','하나님\n','할머니\n','할아버지\n','황소\n','흰머리\n'];
       var table2 = ['하늘\n','경례\n','날다\n','달리기\n','도시락\n','별\n','비\n','비행기\n','빗자루\n','주황색\n','새장\n','아줌마\n','주황\n','안개\n','얼음\n','외국인\n','위협\n','점심\n','점심식사\n'];
       var table3 = ['금불상\n','꼬부랑길\n','노랑\n','노란색\n','면종류\n','바둑\n','박쥐\n','백사장\n','사냥꾼\n','소스\n','왕관\n','외국옷\n','우산\n','인형\n','장기\n','축구공\n','춤\n','호랑이\n','보살\n'];
@@ -124,7 +128,7 @@
       function filter(){
           var sevalue = document.getElementById("search").value
           var con = sevalue.length
-          if (search.value == ""){alert("입력값이 없습니다.")}
+          if (search.value == ""){alert("검색어를 입력하세요")}
           else {
               for (i = 0; i < table1.length; i++) {
                 if (table1[i].indexOf(sevalue) == 0){
@@ -445,78 +449,143 @@
         };
         function colorchange(){
           if (value.value > 0 && value.value <= 10)
-            {document.getElementById('value').style.backgroundColor = 'yellow'}
+            {document.getElementById('value').style.backgroundColor = 'orange'
+            document.getElementById('value').style.color = 'white'}
           if (value.value > 10 && value.value <= 20)
-            {document.getElementById('value').style.backgroundColor = '#0099ff'}
+            {document.getElementById('value').style.backgroundColor = '#0099ff'
+            document.getElementById('value').style.color = 'white'}
           if (value.value > 20 && value.value <= 30)
-            {document.getElementById('value').style.backgroundColor = '#ff0000'}
+            {document.getElementById('value').style.backgroundColor = '#ff0000'
+            document.getElementById('value').style.color = 'white'}
           if (value.value > 30 && value.value <= 40)
-            {document.getElementById('value').style.backgroundColor = '#AAAAAA'}
+            {document.getElementById('value').style.backgroundColor = '#AAAAAA'
+            document.getElementById('value').style.color = 'white'}
           if (value.value > 40 && value.value <= 45)
-            {document.getElementById('value').style.backgroundColor = '#00cc00'}
+            {document.getElementById('value').style.backgroundColor = '#00cc00'
+            document.getElementById('value').style.color = 'white'}
         };
 
         function changecode(){
           if (arrcode.value > 0 && arrcode.value <= 10)
-            {document.getElementById('arrcode').style.backgroundColor = 'yellow'}
+            {document.getElementById('arrcode').style.backgroundColor = 'orange'
+              document.getElementById('arrcode').style.color = 'white'
+              document.getElementById('arrcode').style.opacity = '100%';}
           if (arrcode.value > 10 && arrcode.value <= 20)
-            {document.getElementById('arrcode').style.backgroundColor = '#0099ff'}
+            {document.getElementById('arrcode').style.backgroundColor = '#0099ff'
+              document.getElementById('arrcode').style.color = 'white'
+              document.getElementById('arrcode').style.opacity = '100%';}
           if (arrcode.value > 20 && arrcode.value <= 30)
-            {document.getElementById('arrcode').style.backgroundColor = '#ff0000'}
+            {document.getElementById('arrcode').style.backgroundColor = '#ff0000'
+            document.getElementById('arrcode').style.color = 'white'
+            document.getElementById('arrcode').style.opacity = '100%';}
           if (arrcode.value > 30 && arrcode.value <= 40)
-            {document.getElementById('arrcode').style.backgroundColor = '#AAAAAA'}
+            {document.getElementById('arrcode').style.backgroundColor = '#AAAAAA'
+            document.getElementById('arrcode').style.color = 'white'
+            document.getElementById('arrcode').style.opacity = '100%';}
           if (arrcode.value > 40 && arrcode.value <= 45)
-            {document.getElementById('arrcode').style.backgroundColor = '#00cc00'}
-            if (arrcode1.value > 0 && arrcode1.value <= 10)
-              {document.getElementById('arrcode1').style.backgroundColor = 'yellow'}
-            if (arrcode1.value > 10 && arrcode1.value <= 20)
-              {document.getElementById('arrcode1').style.backgroundColor = '#0099ff'}
-            if (arrcode1.value > 20 && arrcode1.value <= 30)
-              {document.getElementById('arrcode1').style.backgroundColor = '#ff0000'}
-            if (arrcode1.value > 30 && arrcode1.value <= 40)
-              {document.getElementById('arrcode1').style.backgroundColor = '#AAAAAA'}
-            if (arrcode1.value > 40 && arrcode1.value <= 45)
-              {document.getElementById('arrcode1').style.backgroundColor = '#00cc00'}
-              if (arrcode2.value > 0 && arrcode2.value <= 10)
-                {document.getElementById('arrcode2').style.backgroundColor = 'yellow'}
-              if (arrcode2.value > 10 && arrcode2.value <= 20)
-                {document.getElementById('arrcode2').style.backgroundColor = '#0099ff'}
-              if (arrcode2.value > 20 && arrcode2.value <= 30)
-                {document.getElementById('arrcode2').style.backgroundColor = '#ff0000'}
-              if (arrcode2.value > 30 && arrcode2.value <= 40)
-                {document.getElementById('arrcode2').style.backgroundColor = '#AAAAAA'}
-              if (arrcode2.value > 40 && arrcode2.value <= 45)
-                {document.getElementById('arrcode2').style.backgroundColor = '#00cc00'}
-                if (arrcode3.value > 0 && arrcode3.value <= 10)
-                  {document.getElementById('arrcode3').style.backgroundColor = 'yellow'}
-                if (arrcode3.value > 10 && arrcode3.value <= 20)
-                  {document.getElementById('arrcode3').style.backgroundColor = '#0099ff'}
-                if (arrcode3.value > 20 && arrcode3.value <= 30)
-                  {document.getElementById('arrcode3').style.backgroundColor = '#ff0000'}
-                if (arrcode3.value > 30 && arrcode3.value <= 40)
-                  {document.getElementById('arrcode3').style.backgroundColor = '#AAAAAA'}
-                if (arrcode3.value > 40 && arrcode3.value <= 45)
-                  {document.getElementById('arrcode3').style.backgroundColor = '#00cc00'}
-                  if (arrcode4.value > 0 && arrcode4.value <= 10)
-                    {document.getElementById('arrcode4').style.backgroundColor = 'yellow'}
-                  if (arrcode4.value > 10 && arrcode4.value <= 20)
-                    {document.getElementById('arrcode4').style.backgroundColor = '#0099ff'}
-                  if (arrcode4.value > 20 && arrcode4.value <= 30)
-                    {document.getElementById('arrcode4').style.backgroundColor = '#ff0000'}
-                  if (arrcode4.value > 30 && arrcode4.value <= 40)
-                    {document.getElementById('arrcode4').style.backgroundColor = '#AAAAAA'}
-                  if (arrcode4.value > 40 && arrcode4.value <= 45)
-                    {document.getElementById('arrcode4').style.backgroundColor = '#00cc00'}
-                    if (arrcode5.value > 0 && arrcode5.value <= 10)
-                      {document.getElementById('arrcode5').style.backgroundColor = 'yellow'}
-                    if (arrcode5.value > 10 && arrcode5.value <= 20)
-                      {document.getElementById('arrcode5').style.backgroundColor = '#0099ff'}
-                    if (arrcode5.value > 20 && arrcode5.value <= 30)
-                      {document.getElementById('arrcode5').style.backgroundColor = '#ff0000'}
-                    if (arrcode5.value > 30 && arrcode5.value <= 40)
-                      {document.getElementById('arrcode5').style.backgroundColor = '#AAAAAA'}
-                    if (arrcode5.value > 40 && arrcode5.value <= 45)
-                      {document.getElementById('arrcode5').style.backgroundColor = '#00cc00'}
+            {document.getElementById('arrcode').style.backgroundColor = '#00cc00'
+            document.getElementById('arrcode').style.color = 'white'
+            document.getElementById('arrcode').style.opacity = '100%';}
+          if (arrcode1.value > 0 && arrcode1.value <= 10)
+            {document.getElementById('arrcode1').style.backgroundColor = 'orange'
+              document.getElementById('arrcode1').style.color = 'white'
+              document.getElementById('arrcode1').style.opacity = '100%';}
+          if (arrcode1.value > 10 && arrcode1.value <= 20)
+            {document.getElementById('arrcode1').style.backgroundColor = '#0099ff'
+              document.getElementById('arrcode1').style.color = 'white'
+              document.getElementById('arrcode1').style.opacity = '100%';}
+          if (arrcode1.value > 20 && arrcode1.value <= 30)
+            {document.getElementById('arrcode1').style.backgroundColor = '#ff0000'
+              document.getElementById('arrcode1').style.color = 'white'
+              document.getElementById('arrcode1').style.opacity = '100%';}
+          if (arrcode1.value > 30 && arrcode1.value <= 40)
+            {document.getElementById('arrcode1').style.backgroundColor = '#AAAAAA'
+              document.getElementById('arrcode1').style.color = 'white'
+              document.getElementById('arrcode1').style.opacity = '100%';}
+          if (arrcode1.value > 40 && arrcode1.value <= 45)
+            {document.getElementById('arrcode1').style.backgroundColor = '#00cc00'
+              document.getElementById('arrcode1').style.color = 'white'
+              document.getElementById('arrcode1').style.opacity = '100%';}
+          if (arrcode2.value > 0 && arrcode2.value <= 10)
+            {document.getElementById('arrcode2').style.backgroundColor = 'orange'
+             document.getElementById('arrcode2').style.color = 'white'
+             document.getElementById('arrcode2').style.opacity = '100%';}
+          if (arrcode2.value > 10 && arrcode2.value <= 20)
+            {document.getElementById('arrcode2').style.backgroundColor = '#0099ff'
+             document.getElementById('arrcode2').style.color = 'white'
+             document.getElementById('arrcode2').style.opacity = '100%';}
+          if (arrcode2.value > 20 && arrcode2.value <= 30)
+            {document.getElementById('arrcode2').style.backgroundColor = '#ff0000'
+             document.getElementById('arrcode2').style.color = 'white'
+             document.getElementById('arrcode2').style.opacity = '100%';}
+          if (arrcode2.value > 30 && arrcode2.value <= 40)
+            {document.getElementById('arrcode2').style.backgroundColor = '#AAAAAA'
+             document.getElementById('arrcode2').style.color = 'white'
+             document.getElementById('arrcode2').style.opacity = '100%';}
+          if (arrcode2.value > 40 && arrcode2.value <= 45)
+            {document.getElementById('arrcode2').style.backgroundColor = '#00cc00'
+             document.getElementById('arrcode2').style.color = 'white'
+             document.getElementById('arrcode2').style.opacity = '100%';}
+          if (arrcode3.value > 0 && arrcode3.value <= 10)
+            {document.getElementById('arrcode3').style.backgroundColor = 'orange'
+            document.getElementById('arrcode3').style.color = 'white'
+            document.getElementById('arrcode3').style.opacity = '100%';}
+          if (arrcode3.value > 10 && arrcode3.value <= 20)
+            {document.getElementById('arrcode3').style.backgroundColor = '#0099ff'
+            document.getElementById('arrcode3').style.color = 'white'
+            document.getElementById('arrcode3').style.opacity = '100%';}
+          if (arrcode3.value > 20 && arrcode3.value <= 30)
+            {document.getElementById('arrcode3').style.backgroundColor = '#ff0000'
+            document.getElementById('arrcode3').style.color = 'white'
+            document.getElementById('arrcode3').style.opacity = '100%';}
+          if (arrcode3.value > 30 && arrcode3.value <= 40)
+            {document.getElementById('arrcode3').style.backgroundColor = '#AAAAAA'
+            document.getElementById('arrcode3').style.color = 'white'
+            document.getElementById('arrcode3').style.opacity = '100%';}
+          if (arrcode3.value > 40 && arrcode3.value <= 45)
+            {document.getElementById('arrcode3').style.backgroundColor = '#00cc00'
+            document.getElementById('arrcode3').style.color = 'white'
+            document.getElementById('arrcode3').style.opacity = '100%';}
+          if (arrcode4.value > 0 && arrcode4.value <= 10)
+              {document.getElementById('arrcode4').style.backgroundColor = 'orange'
+            document.getElementById('arrcode4').style.color = 'white'
+            document.getElementById('arrcode4').style.opacity = '100%';}
+          if (arrcode4.value > 10 && arrcode4.value <= 20)
+            {document.getElementById('arrcode4').style.backgroundColor = '#0099ff'
+            document.getElementById('arrcode4').style.color = 'white'
+            document.getElementById('arrcode4').style.opacity = '100%'}
+          if (arrcode4.value > 20 && arrcode4.value <= 30)
+            {document.getElementById('arrcode4').style.backgroundColor = '#ff0000'
+            document.getElementById('arrcode4').style.color = 'white'
+            document.getElementById('arrcode4').style.opacity = '100%'}
+          if (arrcode4.value > 30 && arrcode4.value <= 40)
+            {document.getElementById('arrcode4').style.backgroundColor = '#AAAAAA'
+            document.getElementById('arrcode4').style.color = 'white'
+            document.getElementById('arrcode4').style.opacity = '100%'}
+          if (arrcode4.value > 40 && arrcode4.value <= 45)
+            {document.getElementById('arrcode4').style.backgroundColor = '#00cc00'
+            document.getElementById('arrcode4').style.color = 'white'
+            document.getElementById('arrcode4').style.opacity = '100%'}
+          if (arrcode5.value > 0 && arrcode5.value <= 10)
+            {document.getElementById('arrcode5').style.backgroundColor = 'orange'
+            document.getElementById('arrcode5').style.color = 'white'
+            document.getElementById('arrcode5').style.opacity = '100%'}
+          if (arrcode5.value > 10 && arrcode5.value <= 20)
+            {document.getElementById('arrcode5').style.backgroundColor = '#0099ff'
+            document.getElementById('arrcode5').style.color = 'white'
+            document.getElementById('arrcode5').style.opacity = '100%'}
+          if (arrcode5.value > 20 && arrcode5.value <= 30)
+            {document.getElementById('arrcode5').style.backgroundColor = '#ff0000'
+            document.getElementById('arrcode5').style.color = 'white'
+            document.getElementById('arrcode5').style.opacity = '100%'}
+          if (arrcode5.value > 30 && arrcode5.value <= 40)
+            {document.getElementById('arrcode5').style.backgroundColor = '#AAAAAA'
+            document.getElementById('arrcode5').style.color = 'white'
+            document.getElementById('arrcode5').style.opacity = '100%'}
+          if (arrcode5.value > 40 && arrcode5.value <= 45)
+            {document.getElementById('arrcode5').style.backgroundColor = '#00cc00'
+            document.getElementById('arrcode5').style.color = 'white'
+            document.getElementById('arrcode5').style.opacity = '100%'}
         };
         function hid(){
           document.getElementById('value').type = 'hidden';
@@ -527,37 +596,43 @@
           arr.pop()
           arrys.pop()
           document.getElementById('arrcode').value = " "
-          document.getElementById('arrcode').style.backgroundColor = 'white'
+          document.getElementById('arrcode').style.backgroundColor = '#000000'
+          document.getElementById('arrcode').style.opacity = '40%'
         };
           if (arrys.length == 2){
           arr.pop()
           arrys.pop()
           document.getElementById('arrcode1').value = " "
-          document.getElementById('arrcode1').style.backgroundColor = 'white'
+          document.getElementById('arrcode1').style.backgroundColor = '#000000'
+          document.getElementById('arrcode1').style.opacity = '40%'
           };
           if (arrys.length == 3){
           arr.pop()
           arrys.pop()
           document.getElementById('arrcode2').value = " "
-          document.getElementById('arrcode2').style.backgroundColor = 'white'
+          document.getElementById('arrcode2').style.backgroundColor = '#000000'
+          document.getElementById('arrcode2').style.opacity = '40%'
           };
           if (arrys.length == 4){
           arr.pop()
           arrys.pop()
           document.getElementById('arrcode3').value = " "
-          document.getElementById('arrcode3').style.backgroundColor = 'white'
+          document.getElementById('arrcode3').style.backgroundColor = '#000000'
+          document.getElementById('arrcode3').style.opacity = '40%'
           };
           if (arrys.length == 5){
           arr.pop()
           arrys.pop()
           document.getElementById('arrcode4').value = " "
-          document.getElementById('arrcode4').style.backgroundColor = 'white'
+          document.getElementById('arrcode4').style.backgroundColor = '#000000'
+          document.getElementById('arrcode4').style.opacity = '40%'
           };
           if (arrys.length == 6){
           arr.pop()
           arrys.pop()
           document.getElementById('arrcode5').value = " "
-          document.getElementById('arrcode5').style.backgroundColor = 'white'
+          document.getElementById('arrcode5').style.backgroundColor = '#000000'
+          document.getElementById('arrcode5').style.opacity = '40%'
           };
         };
 
@@ -582,7 +657,7 @@
 
     <br>
     <div class = "searchNumber">
-    <input type="search" id="search" name ="q" placeholder="keyword">
+    <input type="search" id="search" name ="q" placeholder="keyword" autocomplete="off">
     <input type="button" id="searching" value="검색" onclick="filter(),colorchange()">
       <!-- <input type="button" id="searching" value="저장"> -->
     <br><br>
@@ -593,17 +668,17 @@
     </div>
     <br>
     <div id = documentation>
-      <h3>
+      <!-- <h3>
           <br>사용방법
           <br> 1)꿈의 키워드를 검색 또는 직접 찾습니다.
-          <br> 2)번호를 클릭 합니다.
+          <br> 2)번호를 클릭합니다.
           <br> 3)조합은 자동으로 정열 됩니다,
                 (부족한 숫자는 난수로 채워보세요)
-        </h3>
+        </h3> -->
+
     </div>
     <div id = "maintable">
     <table class="type01">
-    <tr><th scope="row">숫자</th><td>키워드</td></tr>
     <tr><th scope="row"><input id = "one1" type="button" value=" 1 " onclick="add(1),aa(),changecode()"></th><td><script type ="text/javascript">document.write('<b id = keycss1>' + table1 + '</b>')</script></td></tr>
     <tr><th scope="row"><input id = "one2" type="button" value=" 2 " onclick="add(2),aa(),changecode()"></th><td><script type ="text/javascript">document.write('<b id = keycss2>' + table2 + '</b>')</script></td></tr>
     <tr><th scope="row"><input id = "one3" type="button" value=" 3 " onclick="add(3),aa(),changecode()"></th><td><script type ="text/javascript">document.write('<br><b id = keycss3>' + table3 + '</b>')</script></td></tr>

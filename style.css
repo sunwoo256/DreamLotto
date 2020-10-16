@@ -2,10 +2,11 @@ h1{
   font-size: 40px;
   margin-bottom: 1px;
   text-align:center;
-  color: white;
-  background-color: black;
+  color: #777777;
   border-style: none;
   padding: 1px
+  background-color: black;
+  opacity: 100%;
 }
   h2{
     text-align:center;
@@ -30,8 +31,9 @@ h1{
   }
 body{
   background-color: black;
+  background-image: url('Lotto_world2.jpg');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
   vertical-align: middle;
 }
 
@@ -49,9 +51,15 @@ body{
   border-radius: 50%;
   height: 2.5em;
   width: 2.5em;
+  background-color: #000000;
+  color : #fff;
+  opacity: 40%;
 }
 .searchNumber {
   text-align:center;
+  padding-bottom: 5%
+  /* position: sticky;
+  top: 0px; */
 }
 #value{
   font-size: 1.5em;
@@ -65,20 +73,22 @@ body{
   text-align: right;
   height: 2.5em;
   width: 2.5em;
-  background-color: black;
   border-style: none;
+  background-color: black;
+  opacity: 0%;
+
 }
 #maintable{
   background-color:#EEEEEE;
   opacity: 0.8;
   padding-top :2em;
   border-radius: 0.5%;
-  width: 60%;
-  margin-left: 20%;
+  width: 75%;
+  margin-left: 12%;
 }
 /* ?? */
 #one1, #one2, #one3, #one4, #one5, #one6, #one7, #one8, #one9, #one10{
-  background-color: yellow;
+  background-color: orange;
   padding: 20%;
   color : black;
   text-align:center;
@@ -87,6 +97,7 @@ body{
   margin-left: 0.5%;
   display: inline-block;
   font-size: 1.5em;
+  color:white;
 }
 /* ?? */
 #one11, #one12, #one13, #one14, #one15, #one16, #one17, #one18, #one19, #one20{
@@ -99,6 +110,7 @@ body{
   margin-left: 0.5%;
   display: inline-block;
   font-size: 1.5em;
+  color:white;
 }
 /* ?? */
 #one21, #one22, #one23, #one24, #one25, #one26, #one27, #one28, #one29, #one30{
@@ -111,6 +123,7 @@ body{
   margin-left: 0.5%;
   display: inline-block;
   font-size: 1.5em;
+  color:white;
 }
 /* ?? */
 #one31, #one32, #one33, #one34, #one35, #one36, #one37, #one38, #one39, #one40{
@@ -123,6 +136,7 @@ body{
   margin-left: 0.5%;
   display: inline-block;
   font-size: 1.5em;
+  color:white;
 }
 /* ?? */
 #one41, #one42, #one43, #one44, #one45{
@@ -135,37 +149,46 @@ body{
   margin-left: 0.5%;
   display: inline-block;
   font-size: 1.5em;
+  color:white;
 }
 #search{
   width: 40%
   padding : 0.5px;
   padding : 0.4em;
   font-size: 1em;
+  background-color: #000000;
+  color: #fff;
+  autocomplete : 'off';
 }
 #searching, #del, #era, #ran{
-  padding : 0.4em;
-  margin-bottom: 1em;
-  font-size: 1em;
-  box-shadow: inset 5em 1em #0066ff;
-  border-radius:10%;
-  margin-left: inherit;
-  text-align: center;
-  color: white;
+  background:#444444;
+  color:#fff;
+  border:none;
+  /* position:relative; */
+  height:1.8em;
+  font-size:1.2em;
+  padding:0 0.4em;
+  /* cursor:pointer; */
+  /* transition:800ms ease all; */
+  outline:none;
+  border-radius: 25%;
+  opacity: 70%;
 };
+
 table.type01 {
     border-collapse: collapse;
     text-align: left;
     line-height: 1.5;
-    margin : 20px 10px;
+    margin : 20em 10em;
     text-align: center;
 }
 table.type01 th {
-    width: 2em;
-    padding: 10px;
-    text-align: center;
+    width: 2.5em;
+    padding: 0.8em;
+    font-size: 1.1em;
+    /* text-align: center; */
 }
 table.type01 td {
-    padding: 10px;
-    vertical-align: top;
-    text-align: center;
+    padding: 1em;
+    /* vertical-align: top; */
 }
