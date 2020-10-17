@@ -1,3 +1,2 @@
 User-agent: *
 Allow:/
-Sitemap: https://sunwoo256.github.io/DreamLotto/sitemap.xml
