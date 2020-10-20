@@ -1,25 +1,31 @@
-h1{
-  font-size: 40px;
-  margin-bottom: 1px;
-  text-align:center;
-  color: #777777;
-  border-style: none;
-  padding: 1px
-  background-color: black;
-  opacity: 100%;
-}
-  h5{
-    text-align:right;
-    color: #ff33ff;
+  h1{
+    font-size: 40px;
+    margin-bottom: 1px;
+    text-align:center;
+    color: #777777;
+    border-style: none;
+    padding: 1px
+    background-color: black;
+    opacity: 100%;
+  }
+  h2{
+    color: #777777;
+    text-align:center;
+    margin-bottom:0px;
+  }
+  h3{
+    color: #777777;
+    text-align:center;
+    font-size: 12px;
+    padding: 0px;
+    margin: 0px;
   }
   h4{
     text-align:center;
   }
-  h3{
-    color: white;
-    margin-top: 0px;
-    margin-left: 30%;
-    font-size: 15px;
+  h5{
+    text-align:right;
+    color: #777777;
   }
 body{
   background-color: black;
@@ -52,7 +58,6 @@ body{
 }
 .searchNumber {
   text-align:center;
-  padding-bottom: 5%
   /* position: sticky;
   top: 0px; */
 }
@@ -169,6 +174,7 @@ body{
   border-radius: 25%;
   opacity: 70%;
 };
+
 
 table.type01 {
     border-collapse: collapse;
