@@ -465,7 +465,9 @@
                       document.getElementById('value').type = 'button';
                       break;
                     }else{console.log("k");break;}}};
-            if (value.value == " "){alert("검색어를 찾지 못했습니다.")}
+            if (value.value == " "){
+              document.getElementById('search').value = "";
+              alert("검색어를 찾지 못했습니다.")}
           };
         };
         function colorchange(){
@@ -611,6 +613,7 @@
         function hid(){
           document.getElementById('value').type = 'hidden';
           document.getElementById('search').value = "";
+          document.getElementById('value').value = " ";
         };
         function rem(){
           if (arrys.length == 1){
@@ -661,7 +664,7 @@
   <body>
     <h1>꿈 로또번호 조합</h1>
     <h2>당신의 꿈 키워드를 해몽 로또번호를 조합 합니다.</h2>
-    <h3>해당 사이트는 인터넷 익스플로러 환경에서 작동이 불가합니다</br>모바일 또는 크롬에 최적화되어있습니다.</h3>
+    <h3>해당 사이트는 인터넷 익스플로러 환경에서 작동이 불가합니다</br>크롬, 모바일 등에 최적화되어있습니다.</h3>
     <div class="hiddennum">
     <input type="hidden" id="display">
     </div>
